@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	List
 %define		pnam	Member
@@ -6,7 +10,7 @@ Summary(pl):	List::Member - member/2 z PROLOGa: zwraca indeks $x w @y
 Name:		perl-List-Member
 Version:	0.02
 Release:	2
-License:	?
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4ed9526901ff53977bc7d3ff0e3f0bf9
@@ -36,7 +40,8 @@ domy¶lna $NEG, czyli -1.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
-#%%{__make} test
+
+%{?with_tests: %{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
