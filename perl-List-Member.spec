@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	List
-%define	pnam	Member
+%define		pdir	List
+%define		pnam	Member
 Summary:	List::Member - PROLOG's member/2: return index of $x in @y
 Summary(pl):	List::Member - member/2 z PROLOGa: zwraca indeks $x w @y
 Name:		perl-List-Member
