@@ -1,8 +1,9 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	List
 %define	pnam	Member
-Summary:	%{pdir}::%{pnam} -- PROLOG's member/2: return index of $x in @y.
-Name:		perl-%{pdir}-%{pnam}
+Summary:	%{pdir}::%{pnam} - PROLOG's member/2: return index of $x in @y
+Summary(pl):	%{pdir}::%{pnam} - member/2 z PROLOGa: zwraca indeks $x w @y
+Name:		perl-List-Member
 Version:	0.02
 Release:	1
 License:	?
@@ -17,11 +18,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A tiny routine to achieve the same effect as PROLOG's "member/2".
 
 Returns the index of supplied scalar in supplied array, or returns the
-value of the package's "$NEG" scalar.  This can be over-riden for the
+value of the package's "$NEG" scalar. This can be over-riden for the
 case when the target is the same as the default "-1".
 
-# %description -l pl
-# TODO
+%description -l pl
+Jest to ma³a funkcja napisana tak, by dawaæ taki sam efekt jak
+"member/2" z PROLOGa. Zwraca indeks podanej liczby w podanej tablicy
+lub zwraca warto¶æ liczby "$NEG" z pakietu. Ta liczba mo¿e byæ
+nadpisana na wypadek, gdyby poszukiwana liczba by³a taka sama, jak
+domy¶lna $NEG, czyli -1.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
