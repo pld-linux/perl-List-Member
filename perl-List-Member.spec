@@ -1,14 +1,14 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	List
-%define	pnam	Member
-Summary:	%{pdir}::%{pnam} - PROLOG's member/2: return index of $x in @y
-Summary(pl):	%{pdir}::%{pnam} - member/2 z PROLOGa: zwraca indeks $x w @y
+%define		pdir	List
+%define		pnam	Member
+Summary:	List::Member - PROLOG's member/2: return index of $x in @y
+Summary(pl):	List::Member - member/2 z PROLOGa: zwraca indeks $x w @y
 Name:		perl-List-Member
 Version:	0.02
 Release:	1
 License:	?
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
