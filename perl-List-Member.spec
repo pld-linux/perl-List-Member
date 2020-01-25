@@ -4,7 +4,6 @@
 
 %define		pdir	List
 %define		pnam	Member
-%include	/usr/lib/rpm/macros.perl
 Summary:	List::Member - PROLOG's member/2: return index of $x in @y
 Summary(pl.UTF-8):	List::Member - member/2 z PROLOGa: zwraca indeks $x w @y
 Name:		perl-List-Member
