@@ -8,7 +8,7 @@ Summary:	List::Member - PROLOG's member/2: return index of $x in @y
 Summary(pl.UTF-8):	List::Member - member/2 z PROLOGa: zwraca indeks $x w @y
 Name:		perl-List-Member
 Version:	0.044
-Release:	1
+Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/L/LG/LGODDARD/%{pdir}-%{pnam}-%{version}.tar.gz
